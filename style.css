@@ -106,7 +106,6 @@ a .black-button:hover{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      gap: 20px;
       padding: 20px;
 }
 
@@ -121,7 +120,11 @@ a .black-button:hover{
 }
 
 .black-box .article{
+      padding-top: 20%;
+      padding-bottom: 20%;
       font-weight: lighter;
+      align-items: center;
+      flex: 1;
 }
 
 .black-box span{
@@ -140,6 +143,11 @@ span.article-number{
       font-size: 2rem;
       color: hsl(35, 77%, 62%);
       font-weight: 900;       
+}
+
+.article.middle{
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
 }
 
 .bottom-section .article{
