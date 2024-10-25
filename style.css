@@ -32,6 +32,14 @@ body{
       justify-content: space-around;
 }
 
+.hidden-menu{
+      display: none;
+}
+
+.hidden-menu:hover{
+      cursor: pointer;
+}
+
 .title .link{
       color: white;
 }
@@ -182,6 +190,15 @@ span.article-number{
       
       .menu{
             width: 100%;
+            justify-content: space-between;
+      }
+
+      .menu-option{
+            display: none;
+      }
+
+      .hidden-menu{
+            display: inline;
       }
 
       .first-article{
