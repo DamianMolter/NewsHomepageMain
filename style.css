@@ -3,11 +3,12 @@ body{
       justify-content: center;
       padding: 10%;
       font-size: 15px;
+      font-family: inter, sans-serif;
 }
 
 #grid-container{
       display: grid;
-      grid-template-rows: 1fr 2fr 2fr;
+      grid-template-rows: 1fr 4fr 2fr;
       grid-template-columns: 2fr 1fr;
       gap: 20px;
 }
@@ -31,6 +32,20 @@ body{
       justify-content: space-around;
 }
 
+.title .link{
+      color: white;
+}
+
+.link{
+      color: black;
+      text-decoration: none;
+
+}
+
+.link:hover{
+      color: hsl(35, 77%, 62%);
+}
+
 .first-article{
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -47,25 +62,42 @@ body{
 
 .first-article-title{
       font-weight: 900;
-      font-size: 4rem;
+      font-size: 4.5rem;
       text-align: left;
+      padding-top: 20px;
 }
 
 .first-article-content{
-      padding: 20px;
+      padding-left: 30px;
+      padding-top:  20px;
       text-align: left;
       display: flex;
       flex-direction: column;
-      justify-content: stretch;
-      gap: 30px;
+      justify-content: space-between;
+}
+
+.first-article-content a{
+      width: 50%;
 }
 
 .black-button{
-      width: 50%;
+      display: block;
       text-align: center;
       background-color: black;
       color: white;
       padding: 10px;
+}
+
+a > .black-button{
+      color: white;
+      font-weight: bolder;
+      text-decoration: none;
+}
+
+a .black-button:hover{
+      color: black;
+      text-decoration: none;
+      background-color: hsl(5, 85%, 63%);
 }
 
 .black-box{
@@ -73,13 +105,22 @@ body{
       color: white;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       padding: 20px;
+}
+
+.black-box .title{
+      font-size: 1rem;
+      font-weight: 900;
 }
 
 .black-box > .title{
       font-size: 2rem;
       font-weight: 900;
+}
+
+.black-box .article{
+      font-weight: lighter;
 }
 
 .black-box span{
@@ -92,6 +133,12 @@ body{
       justify-content: center;
       align-items: center;
       padding-top: 50px;
+}
+
+span.article-number{
+      font-size: 2rem;
+      color: hsl(35, 77%, 62%);
+      font-weight: 900;       
 }
 
 .bottom-section .article{
@@ -109,4 +156,10 @@ body{
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
+
+.attribution a:hover {
+      color: hsl(35, 77%, 62%);
+      text-decoration: none;
+    }
