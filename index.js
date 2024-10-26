@@ -3,6 +3,7 @@ $("#menu-icon").click(function () {
   $("#x-mark").addClass("visible");
   $("#menu").addClass("mobile");
   $("#menu-icon").addClass("hidden");
+  $("body").addClass("covered");
 });
 
 $("#x-mark").click(function(){
@@ -10,4 +11,5 @@ $("#x-mark").click(function(){
       $("#x-mark").addClass("hidden");
       $("#menu").removeClass("mobile");
       $("#menu-icon").removeClass("hidden");
+      $("body").removeClass("covered");
 })
